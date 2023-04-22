@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+ }
+ :root{
+    --bg-color: #60ceca;
+    --Obox-color:rgb(21, 126, 35);
+    --Mbox-color:#edeef0;
+    --second-bg-color:#323946;
+    --text-color:rgb(242, 198, 250);
+    --shadow-color:rgb(168, 196, 184);
+    --red-color:rgb(255, 0, 0);
+    --orange-color:rgb(255, 115, 0);
+
+
+ }
+ html{
+    font-size: 62.5%;
+    overflow-x:hidden ;
+ }
+ body{
+    background: var(--bg-color);
+    color: var(--second-bg-color);
+ }
+
+ .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--second-bg-color);
+    width: 100%;
+    padding: 2rem 9% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+
+ }  
+ .bx-menu{
+    font-size: 3.5rem;
+   
+ }
+ .logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+  }
+  .navbar a{
+    font-size: 1.77rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .4s;
+}
+
+
+ .contener{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg , var(--Obox-color) ,#e558c7);
+    padding:10px;
+ }
+ .Todo_app{
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    background: var(--text-color);
+    justify-content: space-between;
+    padding:40px 30px 70px ;
+    border-radius: 10px;
+ }
+ .Todo_app h2{
+    color: var(--second-bg-color);
+    display: flex;
+    font-size: 2rem;
+    font-weight: 700;
+    align-items: center;
+   
+    margin-bottom: 20px;
+ }
+ .Todo_app h2 span{
+    font-size: 2.3rem;
+    color: var(--orange-color);
+    margin-left: 1.7rem;
+    font-weight: 700px;
+ }
+ .Todo_app h2 i{
+    width: 30px;
+    font-size: 4.7rem;
+ 
+    margin-left: 15rem;
+ }
+ .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--Mbox-color);
+    padding-left: 20px;
+    margin-bottom: 25px;
+    border-radius: 30px;
+
+ }
+ input{
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 16px;
+    font-size: 1.6rem;
+
+ }
+ button{
+    outline: none;
+    border: none;
+    padding: 18px 51px;
+    cursor: pointer;
+    background:var(--orange-color) ;
+    border-radius: 40px;
+    font-size: 1.6rem;
+    font-weight: 200px;
+    color: var(--text-color);
+ }
+ ul li{
+    list-style: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 15px 8px 15px 51px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+ }
+ ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(https://img.freepik.com/premium-vector/angry-cloud_78370-90.jpg);
+    background-size: cover;
+    background-position:center ;
+    top: 12px;
+    left: 8px;
+ }
+.checked{
+    color: var(--second-bg-color);
+    text-decoration: line-through;
+    font-weight: 700;
+ }
+ .checked::before{
+    background-image: url(https://img.freepik.com/free-vector/green-eco-loop-leaf-check-mark_78370-658.jpg?w=1380&t=st=1682063099~exp=1682063699~hmac=ebf386ae80324b507641506c8ff8a42c85fe2511ac30a9dd98ca9ac14e50838c) ;
+ }
+ ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 2.7rem;
+    line-height: 40px;
+    align-items: center;
+    color: var(--Obox-color);
+    border-radius: 30%;
+    text-align: center;
+ }
+ ul li span:hover{
+    color: var(--red-color);
+    background: var(--second-bg-color);
+ }
+
+
+ .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+    color: antiquewhite;
+}
+.footer-text p{
+    font-size: 2.5rem;
+}
+.footer-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+   padding: .8rem;
+    cursor: pointer;
+    background:var(--bg-color);
+    
+    border-radius: .8rem;
+    
+     font-size: 1.6rem;
+    transition: .5s ease;
+}
+.footer-icon a i{
+    font-size: 2.4rem;
+    color: var(--0bg-color);
+}
+
+ /* BREAKPOINT  */
+@media (max-width: 1200px){
+    html{
+        font-size: 0.45rem;
+    }
+    
+}
+@media(max-width:890px){
+    .header{
+        padding:2rem 3% ;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+@media(max-width:340px){
+   
+   
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    
+}

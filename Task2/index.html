@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- box icone -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>To-Do_List</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"> My ToDo List</a> 
+        <i class='bx bx-menu'></i>
+       
+
+        <nav class="navbar">
+            <a href="https://lorenz0lta.netlify.app" class="active">Zolta</a>
+            <a href="https://medium.com/@armanpanda785">Blogs</a>
+            <a href="https://armanportfolio.netlify.app">To Me</a>
+        </nav>
+    </header>
+
+    <section class="todo">
+
+    <div class="contener">
+        <div class="Todo_app">
+            <h2>TO DO L I S T  <span>A R M A N !</span> <i class='bx bxs-flag-checkered'></i> </h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your work">
+                <button onclick="addTask()"> Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- footer part  -->
+    <footer class="footer" id="footer">
+
+        <div class="footer-text">
+            <p> Copyrite &copy; 2023 by  <span>Arman Panda</span> | portfolio</p>
+        </div>
+
+        <div class="footer-icon">
+            <a href="https://github.com/Armanpanda0"><i class='bx bx-arrow-to-top'></i></a>
+        </div>
+    </footer>
+
+
+
+    <script src="script/script.js"></script>
+</body>
+</html>
